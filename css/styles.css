@@ -38,13 +38,18 @@ nav a:hover { color: var(--gold); }
 .btn.navy { background: var(--navy); color: #fff; }
 .btn.outline { background: transparent; color: #fff; border: 2px solid #fff; }
 .hero {
+  position: relative;
   min-height: 620px;
   display: grid;
   align-items: center;
   color: #fff;
-  background: linear-gradient(90deg, rgba(8,26,52,.82) 0%, rgba(8,26,52,.5) 48%, rgba(8,26,52,.28) 100%), var(--hero) center/cover no-repeat;
+  overflow: hidden;
+  background-color: #081a34;
+  background-image: linear-gradient(90deg, rgba(8,26,52,.88) 0%, rgba(8,26,52,.55) 48%, rgba(8,26,52,.3) 100%), var(--hero, none);
+  background-size: cover;
+  background-position: center;
 }
-.hero .wrap { padding: 72px 0; }
+.hero .wrap { position: relative; z-index: 2; padding: 72px 0; }
 .hero .eyebrow { color: var(--gold); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 12px; }
 .hero h1 { margin: 0 0 16px; max-width: 16ch; font-size: clamp(36px, 5.4vw, 62px); line-height: 1.05; font-weight: 800; }
 .hero p { max-width: 46ch; font-size: 18px; color: #e8edf5; margin: 0 0 24px; }
@@ -75,9 +80,11 @@ h2 { margin: 0 0 12px; color: var(--navy); font-size: clamp(28px, 3.4vw, 40px); 
 .card p, .review p { margin: 0; color: var(--muted); }
 .tag { color: var(--gold-dark); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 6px; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.photo { min-height: 420px; background: var(--tom) center/cover no-repeat; }
+.photo { min-height: 420px; background: #0b2347; }
+.photo img { width:100%; height:420px; object-fit:cover; display:block; }
 .page-hero {
-  background: linear-gradient(90deg, rgba(8,26,52,.75), rgba(8,26,52,.4)), var(--slate) center/cover;
+  background-color: #081a34;
+  background-image: linear-gradient(90deg, rgba(8,26,52,.75), rgba(8,26,52,.4));
   color: #fff;
   padding: 72px 0;
 }
