@@ -3,76 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Free inspection | Lyons Contracting</title>
+  <title>Free Estimate | Lyons Contracting</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="topbar sans"><div class="wrap"><div>No CAPTCHA · Phone optional if email is provided</div><div><a href="tel:7032998888">703-299-8888</a></div></div></div>
-  <header class="site">
-    <div class="wrap">
-      <a class="logo" href="index.html"><strong>Lyons Contracting</strong><span>Inspection</span></a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
-        <a href="estimate.html" class="btn">Free inspection</a>
-      </nav>
+  <div class="topbar"><div class="wrap"><div>Free inspection</div><div><a href="tel:7032998888">703-299-8888</a></div></div></div>
+  <header class="site"><div class="wrap">
+    <a class="logo" href="index.html"><strong>Lyons Contracting</strong><span>Free estimate</span></a>
+    <nav><a href="index.html">Home</a><a href="work.html">Our Work</a><a href="estimate.html" class="btn">Get a Free Estimate</a></nav>
+  </div></header>
+  <section class="form-band" style="min-height:70vh"><div class="wrap split">
+    <div>
+      <h2>Schedule a free roof inspection</h2>
+      <p class="lead">Leave a name, the property location, and a way to reach you.</p>
+      <ol style="color:#d5deea;padding-left:18px">
+        <li>We confirm the address and the issue.</li>
+        <li>The office schedules a visit.</li>
+        <li>You get photos from the roof and a written proposal.</li>
+      </ol>
+      <p><a class="btn" href="tel:7032998888">Call 703-299-8888</a></p>
     </div>
-  </header>
-  <section class="form-panel" style="min-height:70vh">
-    <div class="wrap split">
-      <div>
-        <p class="kicker">What happens next</p>
-        <h2>Ask for the inspection. Keep your afternoon.</h2>
-        <ol class="sans" style="padding-left:18px;color:#e8dfd0">
-          <li>You send a name and a way to reach you.</li>
-          <li>Tom or the office replies — often the same day, almost always the next business day.</li>
-          <li>Someone looks at the roof, takes photos or video, and writes a proposal.</li>
-          <li>You get a number and a recommendation. Including “you do not need us yet,” when that is true.</li>
-        </ol>
-        <p>Required today on the live site: phone, referral source, and a CAPTCHA. Required here: a name and a location. That is the whole point of the demo.</p>
+    <form class="form" id="lead-form">
+      <div><label for="name">Name</label><input id="name" required></div>
+      <div><label for="zip">Street or ZIP</label><input id="zip" required placeholder="Alexandria 22301"></div>
+      <div><label for="email">Email</label><input id="email" type="email"></div>
+      <div><label for="phone">Phone</label><input id="phone"></div>
+      <div class="full"><label for="need">Job type</label>
+        <select id="need"><option value="">Not sure</option><option>Leak / repair</option><option>Replacement</option><option>Inspection</option></select>
       </div>
-      <form class="form" id="lead-form">
-        <div>
-          <label for="name">First name</label>
-          <input id="name" required>
-        </div>
-        <div>
-          <label for="zip">Street or ZIP</label>
-          <input id="zip" required placeholder="Alexandria 22301">
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="email">
-        </div>
-        <div>
-          <label for="phone">Phone</label>
-          <input id="phone">
-        </div>
-        <div class="full">
-          <label for="need">Job type (optional)</label>
-          <select id="need">
-            <option value="">Not sure</option>
-            <option>Leak / repair</option>
-            <option>Replacement</option>
-            <option>Inspection</option>
-          </select>
-        </div>
-        <p class="hint">Referral source is not on this form on purpose. Invisible spam protection would sit behind the button, not in front of it.</p>
-        <div class="full"><button class="btn" type="submit">Request the inspection</button></div>
-      </form>
-      <div class="success" id="success">
-        <h3 style="margin-top:0">Got it.</h3>
-        <p>Demo only — nothing was sent to Lyons. On the real site this would notify the office and tell the homeowner when to expect a call.</p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="wrap">
-      <div>4930 A Eisenhower Ave, Alexandria, VA 22304</div>
-      <div><a href="index.html">Back to demo home</a></div>
-      <div>Demo mockup</div>
-    </div>
-  </footer>
+      <p class="note">Phone or email is enough. Demo only.</p>
+      <div class="full"><button class="btn" type="submit">Request inspection</button></div>
+    </form>
+    <div class="ok" id="success"><h3 style="margin-top:0">Got it.</h3><p>On the live site this would reach Lyons.</p></div>
+  </div></section>
+  <footer><div class="wrap"><div>4930 A Eisenhower Ave, Alexandria, VA 22304</div><div><a href="index.html">Home</a></div><div>Demo</div></div></footer>
   <script src="js/main.js"></script>
 </body>
 </html>
